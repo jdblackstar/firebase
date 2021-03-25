@@ -10,6 +10,8 @@ import json
 import requests
 import io
 
+import pyrebase
+
 API_KEY = 'ffb5aa052bb34a36b29b0cedc4b9eeec'
 API_SECRET = 'BZ2o0ZgeXtBzHxQlfoiO2gd9DjadFFq3iX05KzZktcHKm742g5gHKt8F'
 API_URL = 'https://api.receptiviti.com/v1/score'
