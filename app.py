@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import current_app, flash, jsonify, make_response, redirect, request, url_for
+from flask import current_app, flash, jsonify, make_response, redirect, request, url_for, render_template
 
 import firebase_admin
 from firebase_admin import credentials
@@ -66,7 +66,7 @@ class Receptiviti():
         results = []
         if len(payload)>0:
             response = requests.post(url, data=json.dumps(payload), auth=(API_KEY, API_SECRET), headers={'Content-Type': 'application/json'})
-            if response.status_code = 200:
+            if response.status_code == 200:
                 results = response.json()
         return results
 
